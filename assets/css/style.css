@@ -4,7 +4,17 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #6699CC;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 header{
+    min-height: 50px;
     height:100px;
     width:100%;
     line-height: 40x;
@@ -20,6 +30,25 @@ li {
     padding: 0px 20px;
     text-decoration: none;
     font-size: 20px;
+}
+section {
+    margin: 50px;
+}
+section img{
+    display: block;
+    margin: 0 auto;
+}
+section p{
+    margin: 50px;
+    text-align: center;
+}
+footer{
+    min-height: 50px;
+    background-color: red;
+    margin-top: auto;
+}
+footer h2{
+    margin-left: 200px;
 }
 /* Utility classes */
 .text-center{
