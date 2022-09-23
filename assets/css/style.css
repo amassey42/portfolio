@@ -14,8 +14,7 @@ body{
 }
 
 header{
-    min-height: 50px;
-    height:100px;
+    height: 200px;
     width:100%;
     line-height: 40x;
     background-color: #737d84;
@@ -32,7 +31,11 @@ li {
     font-size: 20px;
 }
 section {
-    margin: 50px;
+    /* margin: 50px; */
+    margin-bottom: 1em;
+    flex-flow: wrap;
+    justify-content: space-around;
+    
 }
 section img{
     display: block;
@@ -42,9 +45,27 @@ section p{
     margin: 50px;
     text-align: center;
 }
+
+main{
+    /* height: 80vh; */
+    border: 5px dashed green;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+main .container{
+    background: gray;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    min-height: 500px;
+    min-width: 500px;
+}
 footer{
     min-height: 50px;
-    background-color: red;
+    background-color: #737d84;
     margin-top: auto;
 }
 footer h2{

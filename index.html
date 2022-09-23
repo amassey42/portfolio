@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrew's Portfolio</title>
+    <title>Andrew Massey's Portfolio</title>
     <!--Added title to my portfolio-->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!--Added link to stylesheet-->
@@ -16,15 +16,15 @@
         <nav class="text-left">
             <ul>
                 <li>
-                    <h1>Andrew's Portfolio</h1>
+                    <h1>Andrew Massey's Portfolio</h1>
                     <!---->
                 </li>
             </ul>
             <nav class="text-right">
                 <ul>
                     <li><a href="#">About Me</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="contact-me">Contact Me</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact-me">Contact Me</a></li>
                     <!--links to various positions on the website.-->
                 </ul>
             </nav>
@@ -40,13 +40,24 @@
         </p>
     </section>
     <!--Main-->
+    <main>
+        <h2 id="work" class="text-center">Work</h2>
+            <div class="container item-1">1</div>
+            <div class="container item-2">2</div>
+            <div class="container item-3">3</div>
+            <div class="container item-4">4</div>
+
+    </main>
+    <!--containers for project links-->
+
+
     <!--footer-->
     <footer>
         <h2 id="contact-me" class="text-left">Contact me</h2>
         <nav class="text-center">
             <ul>
-                <li>Email: <a href="mailto:ammassey42@gmail.com">Ammassey42@gmail.com</a></li>
-                <li></li>
+                <li><a href="mailto:ammassey42@gmail.com">Ammassey42@gmail.com</a></li>
+                <li><a href="https://github.com/amassey42" target="_blank">GitHub</a></li>
                 <li></li>
             </ul>
         </nav>
@@ -57,9 +68,9 @@
 <!--GIVEN I need to sample a potential employee's previous work
 TODO:WHEN I load their portfolio
 THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-TODO:WHEN I click one of the links in the navigation
+WHEN I click one of the links in the navigation
 THEN the UI scrolls to the corresponding section
-TODO:WHEN I click on the link to the section about their work
+WHEN I click on the link to the section about their work
 THEN the UI scrolls to a section with titled images of the developer's applications
 TODO:WHEN I am presented with the developer's first application
 THEN that application's image should be larger in size than the others
