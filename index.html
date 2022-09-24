@@ -41,27 +41,40 @@
     </figure>
     <!--Main-->
     <main>
-        <h2 class="text-center">Projects</h2>
-       <section class="card">
-            <P>First project</P>
-            <a href="https://github.com/amassey42/code-refactor" target="_blank"><img src="./assets/placeholder_image.png" alt="Placeholder photo" width="400" height="400"> </a>
-       </section>
-       <section class="card">
-            <P>Second project</P>
-            <a href="#"><img src="./assets/placeholder_image.png" alt="Placeholder photo" width="400" height="400"></a>
-        </section>
-        <section class="card">
-            <P>Third project</P>
-            <a href="#"><img src="./assets/placeholder_image.png" alt="Placeholder photo" width="400" height="400"></a>
-        </section>
-        <section class="card">
-            <P>Fourth project</P>
-            <a href="#"><img src="./assets/placeholder_image.png" alt="Placeholder photo" width="400" height="400"></a>
-       </section>
-       <section class="card">
-            <P>Fifth project</P>
-            <a href="#"><img src="./assets/placeholder_image.png" alt="Placeholder photo" width="400" height="400"></a>
-   </section>
+        <div id="parent_div">
+            <h2 id="work" class="text-center">Projects</h2>
+            <div id="project_div">
+                <div>
+                    <section class="card">
+                        <P>First project</P>
+                        <a href="https://github.com/amassey42/code-refactor" target="_blank"><img src="./assets/placeholder_image.png" alt="Placeholder photo" width="600" height="400"> </a>
+                   </section>
+                </div>
+               <div >
+                <div id="project_parent_div">
+                    <section id="project_two">
+                        <P>Second project</P>
+                        <a href="#"><img src="./assets/placeholder_image.png" alt="Placeholder photo" width="400" height="400"></a>
+                    </section>
+                    <section id="project_three">
+                        <P>Third project</P>
+                        <a href="#"><img src="./assets/placeholder_image.png" alt="Placeholder photo" width="400" height="400"></a>
+                    </section>
+                </div>
+                <div id="project_parent_div">
+                    <section id="project_four">
+                        <P>Fourth project</P>
+                        <a href="#"><img src="./assets/placeholder_image.png" alt="Placeholder photo" width="400" height="400"></a>
+                    </section>
+                    <section id="project_five">
+                        <P>Fifth project</P>
+                        <a href="#"><img src="./assets/placeholder_image.png" alt="Placeholder photo" width="400" height="400"></a>
+                    </section>
+                </div>
+                
+               </div>
+               </div>
+            </div>
    <!--Links to projects with clickable pictures-->
     </main>
     
@@ -90,7 +103,7 @@ WHEN I click one of the links in the navigation
 THEN the UI scrolls to the corresponding section
 WHEN I click on the link to the section about their work
 THEN the UI scrolls to a section with titled images of the developer's applications
-TODO:WHEN I am presented with the developer's first application
+WHEN I am presented with the developer's first application
 THEN that application's image should be larger in size than the others
 WHEN I click on the images of the applications
 THEN I am taken to that deployed application
