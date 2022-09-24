@@ -22,8 +22,8 @@
             </ul>
             <nav class="text-right">
                 <ul>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#work">Work</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#work">Projects</a></li>
                     <li><a href="#contact-me">Contact Me</a></li>
                     <!--links to various positions on the website.-->
                 </ul>
@@ -31,33 +31,51 @@
         </nav>
     </header>
     <!--section-->
-    <section>
-        <h1 class="text-center">About Andrew</h1>
+    <figure>
+        <h1 id="about-me" class="text-center">About Andrew</h1>
         <img src="./assets/Andrew.JPG" alt="An image of Andrew." width="300" height="400">
         <!--Added an image of myself with a height of 400px and a width of 300px-->
-        <p>
+        <p class="text-center">
             Hello, I am Andrew. I am a bootcamp student looking to change careers and become a web developer. Here are some of my projects i have done while learning this new world of web develpoment.
         </p>
-    </section>
+    </figure>
     <!--Main-->
     <main>
-        <h2 id="work" class="text-center">Work</h2>
-            <div class="container item-1">1</div>
-            <div class="container item-2">2</div>
-            <div class="container item-3">3</div>
-            <div class="container item-4">4</div>
-
+        <h2 class="text-center">Projects</h2>
+       <section class="card">
+            <P>First project</P>
+            <a href="https://github.com/amassey42/code-refactor" target="_blank"><img src="http://placekitten.com/400/400" alt="Placeholder photo"> </a>
+       </section>
+       <section class="card">
+            <P>Second project</P>
+            <a href="#"><img src="http://placekitten.com/400/400" alt="Placeholder photo"></a>
+        </section>
+        <section class="card">
+            <P>Third project</P>
+            <a href="#"><img src="http://placekitten.com/400/400" alt="Placeholder photo"></a>
+        </section>
+        <section class="card">
+            <P>Fourth project</P>
+            <a href="#"><img src="http://placekitten.com/400/400" alt="Placeholder photo"></a>
+       </section>
+       <section class="card">
+            <P>Fifth project</P>
+            <a href="#"><img src="http://placekitten.com/400/400" alt="Placeholder photo"></a>
+   </section>
+   <!--Links to projects with clickable pictures-->
     </main>
-    <!--containers for project links-->
+    
 
 
     <!--footer-->
     <footer>
-        <h2 id="contact-me" class="text-left">Contact me</h2>
+        <h2 id="contact-me" class="text-center">Contact me</h2>
         <nav class="text-center">
             <ul>
                 <li><a href="mailto:ammassey42@gmail.com">Ammassey42@gmail.com</a></li>
+                <!--Opens up default email program and inserts my email.-->
                 <li><a href="https://github.com/amassey42" target="_blank">GitHub</a></li>
+                <!--Opens a new tab wtih my github account-->
                 <li></li>
             </ul>
         </nav>
@@ -66,7 +84,7 @@
 </html>
 
 <!--GIVEN I need to sample a potential employee's previous work
-TODO:WHEN I load their portfolio
+WHEN I load their portfolio
 THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
 WHEN I click one of the links in the navigation
 THEN the UI scrolls to the corresponding section
@@ -74,7 +92,7 @@ WHEN I click on the link to the section about their work
 THEN the UI scrolls to a section with titled images of the developer's applications
 TODO:WHEN I am presented with the developer's first application
 THEN that application's image should be larger in size than the others
-TODO:WHEN I click on the images of the applications
+WHEN I click on the images of the applications
 THEN I am taken to that deployed application
 TODO:WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport-->

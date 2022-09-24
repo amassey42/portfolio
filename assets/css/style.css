@@ -1,3 +1,8 @@
+:root{
+--primary: #737d84;
+
+}
+
 *{
     padding: 0;
     margin:0;
@@ -13,12 +18,11 @@ body{
     flex-direction: column;
 }
 
-header{
-    height: 200px;
-    width:100%;
-    line-height: 40x;
-    background-color: #737d84;
+header, footer{
+    height: 15vh;
+    background: var(--primary);
 }
+
 a{
     color: white;
     text-decoration: none;
@@ -30,47 +34,32 @@ li {
     text-decoration: none;
     font-size: 20px;
 }
-section {
-    /* margin: 50px; */
-    margin-bottom: 1em;
+figure {
     flex-flow: wrap;
     justify-content: space-around;
     
 }
-section img{
+figure img{
     display: block;
     margin: 0 auto;
 }
-section p{
+figure p{
     margin: 50px;
-    text-align: center;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
 }
 
-main{
-    /* height: 80vh; */
-    border: 5px dashed green;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+.card{
+   flex: 1 0 0;
+   padding: 10px;
+   text-align: center;
+   border-style: solid black;
+   border-width: 2px;
 }
-main .container{
-    background: gray;
-    border: 1px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: space-around;
-    min-height: 500px;
-    min-width: 500px;
-}
-footer{
-    min-height: 50px;
-    background-color: #737d84;
-    margin-top: auto;
-}
-footer h2{
-    margin-left: 200px;
-}
+
 /* Utility classes */
 .text-center{
     text-align: center;
@@ -82,4 +71,22 @@ footer h2{
 
 .text-left{
     text-align: left;
+}
+
+@media screen and (max-width: 992px) {
+    .card{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .card{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 540px){
+.card{
+    width: 100%;
+}
 }
