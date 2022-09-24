@@ -51,6 +51,9 @@ main{
     flex-wrap: wrap;
     margin-top: 5%;
 }
+main h2{
+    padding: 20px;
+}
 
 .card{
    flex: 1 0 0;
