@@ -13,14 +13,13 @@
 <body>
     <!--Header-->
     <header>
-        <nav class="text-left">
+        <nav id="parent_div"class="text-left">
             <ul>
                 <li>
-                    <h1>Andrew Massey's Portfolio</h1>
-                    <!---->
+                    <h1 id="dev-name">Andrew Massey's Portfolio</h1>
                 </li>
             </ul>
-            <nav class="text-right">
+            <nav id="project_div"class="text-right">
                 <ul>
                     <li><a href="#about-me">About Me</a></li>
                     <li><a href="#work">Projects</a></li>
@@ -32,12 +31,16 @@
     </header>
     <!--section-->
     <figure>
-        <h1 id="about-me" class="text-center">About Andrew</h1>
-        <img src="./assets/Andrew.JPG" alt="An image of Andrew." width="300" height="400">
-        <!--Added an image of myself with a height of 400px and a width of 300px-->
-        <p class="text-center">
-            Hello, I am Andrew. I am a bootcamp student looking to change careers and become a web developer. Here are some of my projects i have done while learning this new world of web develpoment.
-        </p>
+        <div id="parent_div">
+            <h1 id="about-me" class="text-center">About Andrew</h1>
+            <div id="project_div">
+                <img src="./assets/Andrew.JPG" alt="An image of Andrew." width="300" height="400">
+                <!--Added an image of myself with a height of 400px and a width of 300px-->
+                <p class="text-center">
+                Hello, I am Andrew. I am a bootcamp student looking to change careers and become a web developer. Here are some of my projects i have done while learning this new world of web develpoment.
+                 </p>
+            </div>
+        </div>
     </figure>
     <!--Main-->
     <main>
@@ -47,7 +50,7 @@
                 <div>
                     <section class="card">
                         <P>First project</P>
-                        <a href="https://github.com/amassey42/code-refactor" target="_blank"><img src="./assets/placeholder_image.png" alt="Placeholder photo" width="600" height="400"> </a>
+                        <a href="https://github.com/amassey42/code-refactor" target="_blank"><img src="./assets/placeholder_image.png" alt="Placeholder photo" width="400" height="400"> </a>
                    </section>
                 </div>
                <div >
@@ -82,16 +85,18 @@
 
     <!--footer-->
     <footer>
-        <h2 id="contact-me" class="text-center">Contact me</h2>
-        <nav class="text-center">
-            <ul>
-                <li><a href="mailto:ammassey42@gmail.com">Ammassey42@gmail.com</a></li>
-                <!--Opens up default email program and inserts my email.-->
-                <li><a href="https://github.com/amassey42" target="_blank">GitHub</a></li>
-                <!--Opens a new tab wtih my github account-->
-                <li></li>
-            </ul>
-        </nav>
+        <div id="parent_div">
+            <h2 id="contact-me" class="text-center">Contact me</h2>
+            <nav id="project_div" class="text-center">
+                <ul>
+                    <li><a href="mailto:ammassey42@gmail.com">Ammassey42@gmail.com</a></li>
+                    <!--Opens up default email program and inserts my email.-->
+                    <li><a href="https://github.com/amassey42" target="_blank">GitHub</a></li>
+                    <!--Opens a new tab wtih my github account-->
+                    <li></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 </body>
 </html>

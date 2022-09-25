@@ -67,9 +67,9 @@ main h2{
    border-width: 2px;
 }
 
-#work{
-    /* background-color: yellow; */
+#work, #about-me, #contact-me, #dev-name{
     flex: 30%;
+    background-color: orange;
 }
 
 #parent_div{
@@ -82,6 +82,8 @@ main h2{
 
 #project_div{
     flex: 70%;
+    /* background-color: purple; */
+    border: 2px solid red;
 }
 
 #project_two{
