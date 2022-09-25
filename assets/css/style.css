@@ -11,6 +11,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
     margin: 0;
     background-color: #6699CC;
     height:100vh;
@@ -18,10 +19,15 @@ body{
     flex-direction: column;
 }
 
-
 header, footer{
     height: 15vh;
     background: var(--primary);
+}
+
+ #parent_li_div{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
 }
 
 a{
@@ -30,7 +36,7 @@ a{
 }
 
 li {
-    display: inline;
+    list-style-type: none;
     padding: 0px 20px;
     text-decoration: none;
     font-size: 20px;
@@ -48,7 +54,6 @@ figure p{
     margin: 50px;
 }
 main{
-    /* display: flex; */
     flex-wrap: wrap;
     margin-top: 5%;
 }
@@ -57,8 +62,6 @@ main h2{
 }
 
 .card{
-   /* flex: 1 0 0; */
-   /* flex: 70%; */
    padding: 10px;
    text-align: center;
    /* background-color: green; */
@@ -86,20 +89,16 @@ main h2{
     border: 2px solid red;
 }
 
-#project_two{
+#project_two, #project_three, #project_four, #project_five{
     flex: 50%;
 }
-#project_three{
-    flex: 50%;
-}
-#project_four{
-    flex: 50%;
-}
+/* project id's 2-5 cause the items to take up 50% of the container*/
 
-#project_five{
-    flex: 50%;
+#project_div #parent_foot_div{
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
 }
-/* project id's 2-5 cause the containers to flex  */
 
 /* Utility classes */
 .text-center{
