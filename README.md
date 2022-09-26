@@ -6,7 +6,9 @@ This project was to create a portfolio to showcase all my upcoming projects. The
 
 ## screenshots
 
-
+![First webpage screenshot](./assets/Website_one.PNG)
+![second webpage screenshot](./assets/Website_two.PNG)
+![Third webpage screenshot](./assets/Website_three.PNG)
 
 ## Link to deployed application
-
+[portfolio]()
